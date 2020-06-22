@@ -2,8 +2,8 @@
 
 Goals:
 
-1- Testing CI with Travis
-2- Adding python testing and best practices with pylama, black and tox.
+- 1 Testing CI with Travis
+- 2 Adding python testing and best practices with pylama, black and tox.
 
 Some details:
 
