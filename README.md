@@ -11,6 +11,8 @@ Some details:
 - black --> config file is pyproject.toml
 - tox --> config file is tox.ini
 - travis --> config file is .travis.yml
+- tools folder --> python script to validate yaml files to call from tox
+
 
 At the end of the day, you can make travis to call tox. And tox manage all tests for pylama and black.
 
