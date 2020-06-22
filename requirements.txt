@@ -1,4 +1,2 @@
-pyyaml
-pytest==5.4.3
-pylama==7.7.1
-black==19.10b0
+pyeapi
+tox

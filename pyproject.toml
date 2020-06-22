@@ -15,8 +15,7 @@ exclude = '''
     | buck-out
     | build
     | dist
-    | old
-    | original
+    | virt_env
   )/
   | foo.py           # also separately exclude a file named foo.py in
                      # the root of the project
