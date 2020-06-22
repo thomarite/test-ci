@@ -18,6 +18,6 @@ Need to get used to create the virtual env inside its own folder, then it is eas
 
 ```
 pyenv local 3.7.3
-python -m venv venv
-source venv/bin/activate
+python -m venv virt_env
+source virt_env/bin/activate
 ```
