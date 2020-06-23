@@ -46,3 +46,7 @@ tests/test_sample2.py::test_answer PASSED
 tests/test_sample2.py::test_answer2 PASSED
 tests/test_sample2.py::test_answer3 PASSED
 ```
+
+Tox:
+
+Somehow messed up the tox.ini and the requirements-dev wasn't installed so I had to remove .tox and start again. All fine afterwards.
