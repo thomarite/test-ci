@@ -2,12 +2,12 @@
 
 # CI + Python best practice tools
 
-Goals:
+# Goals
 
 - 1 Testing CI with Travis
 - 2 Adding python testing and best practices with pylama, black, pytest and tox.
 
-Some details:
+# Some details
 
 - pylama --> config file is setup.cfg
 - black --> config file is pyproject.toml
@@ -25,6 +25,8 @@ pyenv local 3.7.3
 python -m venv virt_env
 source virt_env/bin/activate
 ```
+
+# Pytest
 
 How to run pytest (if you have the VMs ready)
 
@@ -50,10 +52,10 @@ tests/test_sample2.py::test_answer2 PASSED
 tests/test_sample2.py::test_answer3 PASSED
 ```
 
-Tox:
+# Tox
 
 Somehow if you add a new library to the requirements-dev file, it is not installed when running tox, so you need to remove .tox folder and then when running tox again, it will reinstall all libraries.
 
-JsonLib:
+# Json
 
-A bit painfule for python3. Had to install "jsonrpclib-pelix" and disable ssl verification. All this just for "test_json" in Arista.
+A bit painful for python3. Had to install "jsonrpclib-pelix" and disable ssl verification. All this just for "test_json" in Arista.
