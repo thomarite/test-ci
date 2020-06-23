@@ -4,8 +4,8 @@
 
 # Goals
 
-- 1 Testing CI with Travis
-- 2 Adding python testing and best practices with pylama, black, pytest and tox.
+- Testing CI with Travis
+- Adding python testing and best practices with pylama, black, pytest and tox.
 
 # Some details
 
@@ -54,7 +54,7 @@ tests/test_sample2.py::test_answer3 PASSED
 
 # Tox
 
-Somehow if you add a new library to the requirements-dev file, it is not installed when running tox, so you need to remove .tox folder and then when running tox again, it will reinstall all libraries.
+Somehow if you add a new library to the requirements-dev file, it is not installed when running tox, so you need to remove .tox folder and then run tox again, it will reinstall all libraries.
 
 # Json
 
