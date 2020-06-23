@@ -5,7 +5,7 @@
 Goals:
 
 - 1 Testing CI with Travis
-- 2 Adding python testing and best practices with pylama, black and tox.
+- 2 Adding python testing and best practices with pylama, black, pytest and tox.
 
 Some details:
 
@@ -14,9 +14,9 @@ Some details:
 - tox --> config file is tox.ini
 - travis --> config file is .travis.yml
 - tools folder --> python script to validate yaml files to call from tox
+- pytest and tests folder --> tests and conftest.py for managing pytest
 
-
-At the end of the day, you can make travis to call tox. And tox manage all tests for pylama and black.
+At the end of the day, you can make travis to call tox. And tox manage all tests for pylama, black and pytest.
 
 Need to get used to create the virtual env inside its own folder, then it is easy to ignore for pylama/black etc.
 
@@ -39,7 +39,8 @@ rootdir: /home/tomas/storage/technology/ci-cd-jenkins/test-ci-travis
 plugins: html-2.1.1, metadata-1.8.0
 collected 8 items                                                                                                          
 
-tests/test_eos.py::test_find_prompt PASSED
+tests/test_eos.py::test_ssh PASSED
+tests/test_eos.py::test_json PASSED
 tests/test_eos.py::test_eapi PASSED
 tests/test_sample.py::test_answer PASSED
 tests/test_sample.py::test_answer2 PASSED
