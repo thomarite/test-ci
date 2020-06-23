@@ -51,4 +51,8 @@ tests/test_sample2.py::test_answer3 PASSED
 
 Tox:
 
-Somehow messed up the tox.ini and the requirements-dev wasn't installed so I had to remove .tox and start again. All fine afterwards.
+Somehow if you add a new library to the requirements-dev file, it is not installed when running tox, so you need to remove .tox folder and then when running tox again, it will reinstall all libraries.
+
+JsonLib:
+
+A bit painfule for python3. Had to install "jsonrpclib-pelix" and disable ssl verification. All this just for "test_json" in Arista.
