@@ -4,10 +4,11 @@ python:
 
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
+  - pip install -r requirements-dev.txt
 
 # command to run tests
 script:
   - pylama .
   - black --check .
-  - py.test -s -v tests/
+  - py.test -s -v tests/test_sample.py
+  - py.test -s -v tests/test_sample2.py
