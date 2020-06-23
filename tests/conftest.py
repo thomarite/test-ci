@@ -4,6 +4,12 @@ import pytest
 from netmiko import ConnectHandler
 from pyeapi.client import Node
 import pyeapi
+from jsonrpclib import Server
+import jsonrpclib
+import ssl
+
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 
 @pytest.fixture(scope="module")
@@ -29,4 +35,10 @@ def eapi_conn(request):
         transport="https", host="0.0.0.0", username="api", password="api123", port=9002,
     )
     node = Node(connection)
+    return node
+
+
+@pytest.fixture(scope="module")
+def json_conn(request):
+    node = Server("https://api:api123@0.0.0.0:9002/command-api")
     return node
