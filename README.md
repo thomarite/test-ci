@@ -50,3 +50,5 @@ tests/test_sample2.py::test_answer3 PASSED
 Tox:
 
 Somehow messed up the tox.ini and the requirements-dev wasn't installed so I had to remove .tox and start again. All fine afterwards.
+
+[![Build Status](https://travis-ci.org/thomarite/test-ci.svg?branch=master)](https://travis-ci.org/thomarite/test-ci)
